@@ -46,7 +46,7 @@
 
 % Arabic page numbers for submission.  Remove this line to eliminate
 % page numbers for the camera ready copy
-% \pagenumbering{arabic}
+\pagenumbering{arabic}
 
 % Load basic packages
 \usepackage{balance}       % to better equalize the last page
@@ -229,9 +229,11 @@ research where mobile tech has been used in project based learning
 
 Previous m-learning research has used these capabilities for a wide variety of applications, such as sensing tool kits to conduct citizen science \cite{Sharples2017}; enabling seamless learning across classrooms and museums on school trips \cite{Vavoula2009}; and empowering children in collecting evidence to support their advocacy and engagement in urban design processes \cite{Peacock2018}. Prior research has also shown that m-learning technologies can enhance the development of relationships with place, and act as a medium through which stakeholders can harness the underlying socioeconomic infrastructures of place as learning resources \cite{Richardson2017}. In the ParkLearn project, Richardson et al attempted to combine elements of all of the above into a single mobile application supporting creating, sharing and engaging with bespoke, place-based m-learning activities `\textit{that leverage the targeted learning environment and mobile devices' hardware to support situated learning}' \cite{Richardson2018}. Through using ParkLearn in longitudinal studies with a primary school and volunteers at a local park, the authors found that the app promoted a sense of ownership in both learners and activity creators by supporting greater degrees of creativity and independence. Furthermore, the app was shown to be an effective medium through which physical and social aspects of the local environment could be leveraged as learning resources.
 
+summary - motivation for using the ourplace app in a project-based learning context, exploring different configurations of curricula
+
 \section{The OurPlace App}
 
-OurPlace is the current iteration of the open-source ParkLearn platform, with an expanded feature set and re-branded to support its use in contexts outside of local parks \cite{Richardson2018a}. Consisting of a website and mobile applications for both Android and iOS, OurPlace supports the creation, sharing and engagement with with m-learning activities (`Activities'), each of which is built up from smaller, modular tasks (`Tasks'). These tasks each consist of a specific interaction (`Task Type'), which either promote creativity, emulate traditional classroom learning materials or use the device's hardware to give context-specific experiences (Table~\ref{tab:TaskTypes}). With the exception of \textit{Scan the QR Code}, all of these Task Types were present in the original ParkLearn application. OurPlace also adds support for `Follow-Up Tasks', which allow activity creators to add sub-tasks which unlock once their parent task has been completed. This supports the design of more complicated combinations of interactions (for example: a \textit{Location Hunt} could unlock a \textit{Record Audio} and \textit{Take a Photo} once the user arrives at a designated location, or a \textit{Multiple Choice} could quiz the user about what they've just heard in a \textit{Listen to Audio}).
+OurPlace is the current iteration of the open-source ParkLearn platform, with an expanded feature set and re-branded to support its use in contexts outside of local parks \cite{Richardson2018a}. Consisting of a website and mobile applications for both Android and iOS, OurPlace supports the creation, sharing and engagement with with m-learning activities (`Activities'), each of which is built up from smaller, modular tasks (`Tasks'). These tasks each consist of a specific interaction (`Task Type'), which either promote creativity, emulate traditional classroom learning materials or use the device's hardware to give context-specific experiences (Table~\ref{tab:TaskTypes}). With the exception of \textit{Scan the QR Code}, all of these Task Types were present in the original ParkLearn application. An Activity can have any number of Tasks within it. OurPlace also adds support for `Follow-Up Tasks', which allow activity creators to add sub-tasks which unlock once their parent task has been completed (Figure~\ref{fig:ActivityCreation}.e). This supports the design of more complicated combinations of interactions (for example: a \textit{Location Hunt} could unlock a \textit{Record Audio} and \textit{Take a Photo} once the user arrives at a designated location, or a \textit{Multiple Choice} could quiz the user about what they've just heard in a \textit{Listen to Audio}).
 
 \begin{table}
   \centering
@@ -257,6 +259,15 @@ OurPlace is the current iteration of the open-source ParkLearn platform, with an
   \end{tabular}
   \caption{The Task Types available in the OurPlace application}~\label{tab:TaskTypes}
 \end{table}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=2.1\columnwidth]{figures/activityCreation}
+  \caption{Creating an OurPlace activity (left to right): a) Choosing the activity's title, description and image; b) Choosing a Task Type to add; c) Adding a \textit{Location Hunt} Task, with description and target coordinates; d) The new Task in the Activity; e) Adding Follow-Up Tasks to the \textit{Location Hunt}  }~\label{fig:ActivityCreation}
+\end{figure*}
+
+Activities are created within the app itself. After supplying a title, description and an optional image (Figure~\ref{fig:ActivityCreation}.a), the designer creates the Tasks that make up the Activity (Figure~\ref{fig:ActivityCreation}.b). Each Task Type requires at least a written instruction for the learner (e.g. A \textit{Location Hunt} might say \textit{`Can you find Carter's Well?'}), but some of them require some additional customization (e.g. supplying geographic coordinates by tapping on a Google Maps view) (Figure~\ref{fig:ActivityCreation}.c). When a Task Type requires an additional file (e.g. a target image for \textit{Photo Match} or an audio recording for \textit{Listen to Audio}), creators are able to either create them through the app itself or load it from an external source (such as Google Drive, Dropbox or files otherwise downloaded from the web). This means that no additional equipment or software is required to create activities (other than \textit{Scan the QR Code}, which requires creators to print the generated QR code from the OurPlace website). Once finished, Activities can be tagged as being relevant to a location before uploading, making it easier for others to find. Additionally, QR codes can be printed from the OurPlace website which launch the activity when scanned in the app.
+
 
 \section{Overview of the OurPlace Curriculum (IRPCPE)}
 
