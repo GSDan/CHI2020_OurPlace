@@ -247,17 +247,17 @@
                                         % top of first footnote.
 \floatsep 11pt plus 2pt minus 2pt       % Space between adjacent floats moved
                                         % to top or bottom of text page.
-\textfloatsep 11pt plus 2pt minus 4pt   % Space between main text and floats
+\textfloatsep 18pt plus 2pt minus 4pt   % Space between main text and floats
                                         % at top or bottom of page.
 \intextsep 11pt plus 2pt minus 2pt      % Space between in-text figures and
                                         % text.
 \@ifundefined{@maxsep}{\newdimen\@maxsep}{}% this is for LaTeX2e
-\@maxsep 11pt                           % The maximum of \floatsep,
+\@maxsep 18pt                           % The maximum of \floatsep,
                                         % \textfloatsep and \intextsep (minus
                                         % the stretch and shrink).
 \dblfloatsep 11pt plus 2pt minus 2pt    % Same as \floatsep for double-column
                                         % figures in two-column mode.
-\dbltextfloatsep 11pt plus 2pt minus 4pt% \textfloatsep for double-column
+\dbltextfloatsep 18pt plus 2pt minus 4pt% \textfloatsep for double-column
                                         % floats.
 \@ifundefined{@dblmaxsep}{\newdimen\@dblmaxsep}{}% this is for LaTeX2e
 \@dblmaxsep 18pt                        % The maximum of \dblfloatsep and
@@ -288,10 +288,10 @@
 \doublehyphendemerits=9999        % No consecutive line hyphens
 \brokenpenalty=9999               % No broken words across pages
 \widowpenalty=9999                % Almost no widows at bottom of page
-\clubpenalty=9999                 % Almost no orphans at top of page
+\clubpenalty=9999                % Almost no orphans at top of page
 \interfootnotelinepenalty=9999    % Almost never break footnotes
 
-\@lowpenalty   51       % Produced by \nopagebreak[1] or \nolinebreak[1]
+\@lowpenalty   11       % Produced by \nopagebreak[1] or \nolinebreak[1]
 \@medpenalty  151       % Produced by \nopagebreak[2] or \nolinebreak[2]
 \@highpenalty 301       % Produced by \nopagebreak[3] or \nolinebreak[3]
 
@@ -1148,7 +1148,7 @@
 }
 
 \def\subsection{%
-    \@startsection{subsection}{2}{\z@}{8pt plus 3pt minus 3pt}%
+    \@startsection{subsection}{2}{\z@}{6pt plus 3pt minus 3pt}%
     {0.5pt}{\baselineskip=14pt\secfnt}%
 }
 \def\subsubsection{%
@@ -1622,8 +1622,8 @@
  \the\copyrightetc}
 \fi
 
-\clubpenalty=10000 
-\widowpenalty = 10000
+\clubpenalty=9999
+\widowpenalty=9999
 
 %% 
 % For the CCSXML 2012 Categories
