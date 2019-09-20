@@ -291,7 +291,7 @@
 \clubpenalty=9999                % Almost no orphans at top of page
 \interfootnotelinepenalty=9999    % Almost never break footnotes
 
-\@lowpenalty   11       % Produced by \nopagebreak[1] or \nolinebreak[1]
+\@lowpenalty   51       % Produced by \nopagebreak[1] or \nolinebreak[1]
 \@medpenalty  151       % Produced by \nopagebreak[2] or \nolinebreak[2]
 \@highpenalty 301       % Produced by \nopagebreak[3] or \nolinebreak[3]
 
