@@ -288,7 +288,7 @@
 \doublehyphendemerits=9999        % No consecutive line hyphens
 \brokenpenalty=9999               % No broken words across pages
 \widowpenalty=9999                % Almost no widows at bottom of page
-\clubpenalty=9999                % Almost no orphans at top of page
+\clubpenalty=9999                 % Almost no orphans at top of page
 \interfootnotelinepenalty=9999    % Almost never break footnotes
 
 \@lowpenalty   51       % Produced by \nopagebreak[1] or \nolinebreak[1]
@@ -1143,12 +1143,12 @@
 % followed by another section head rather than text, are decently spaced vertically.
 % 12 Jan 2000 gkmt
 \def\section{%
-    \@startsection{section}{1}{\z@}{8pt plus 3pt minus 3pt}%
+    \@startsection{section}{1}{\z@}{7pt plus 3pt minus 3pt}%
     {0.5pt}{\baselineskip=14pt\secfnt\@ucheadtrue}%
 }
 
 \def\subsection{%
-    \@startsection{subsection}{2}{\z@}{6pt plus 3pt minus 3pt}%
+    \@startsection{subsection}{2}{\z@}{7pt plus 3pt minus 3pt}%
     {0.5pt}{\baselineskip=14pt\secfnt}%
 }
 \def\subsubsection{%
@@ -1622,8 +1622,8 @@
  \the\copyrightetc}
 \fi
 
-\clubpenalty=9999
-\widowpenalty=9999
+\clubpenalty=10000 
+\widowpenalty = 10000
 
 %% 
 % For the CCSXML 2012 Categories
