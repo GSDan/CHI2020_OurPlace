@@ -1143,12 +1143,12 @@
 % followed by another section head rather than text, are decently spaced vertically.
 % 12 Jan 2000 gkmt
 \def\section{%
-    \@startsection{section}{1}{\z@}{7pt plus 3pt minus 3pt}%
+    \@startsection{section}{1}{\z@}{8pt plus 3pt minus 3pt}%
     {0.5pt}{\baselineskip=14pt\secfnt\@ucheadtrue}%
 }
 
 \def\subsection{%
-    \@startsection{subsection}{2}{\z@}{7pt plus 3pt minus 3pt}%
+    \@startsection{subsection}{2}{\z@}{8pt plus 3pt minus 3pt}%
     {0.5pt}{\baselineskip=14pt\secfnt}%
 }
 \def\subsubsection{%

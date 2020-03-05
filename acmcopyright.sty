@@ -45,6 +45,8 @@
 \newif\if@acmowned
 \@acmownedtrue
 \RequirePackage{xkeyval}
+\RequirePackage{ccicons}
+\RequirePackage{hyperref}
 \define@choicekey*{ACM@}{acmcopyrightmode}[%
   \acm@copyrightinput\acm@copyrightmode]{none,acmcopyright,acmlicensed,%
   rightsretained,usgov,usgovmixed,cagov,cagovmixed,%
@@ -94,7 +96,7 @@
   Copyright held by the owner/author(s). Publication rights licensed to
   ACM.
   \or % rightsretained
-  Copyright held by the owner/author(s).
+  Copyright for this work is held by the owner/author(s). This work is licensed under a \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution International 4.0 License}.  \ccby
   \or % usgov
   \or % usgovmixed
   ACM.
