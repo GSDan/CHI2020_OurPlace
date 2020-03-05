@@ -1,5 +1,5 @@
-#H1 We are the Greatest Showmen: Configuring a Framework for Project-Based Mobile Learning
-#H2 Dan Richardson, Ahmed Kharrufa
+# We are the Greatest Showmen: Configuring a Framework for Project-Based Mobile Learning
+## Dan Richardson, Ahmed Kharrufa
 
 This paper was accepted for publishing and presentation at the 2020 CHI Conference on Human Factors in Computing Systems. [DOI](https://doi.org/10.1145/3313831.3376650)
 
